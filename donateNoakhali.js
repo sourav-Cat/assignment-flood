@@ -1,4 +1,4 @@
-console.log('connected')
+ 
 document.getElementById('Donate-Now').addEventListener('click',function(){
     const donationAmount=document.getElementById('inut-donateValue').value;
    if (!donationAmount || isNaN(donationAmount) || donationAmount <= 0) {
@@ -19,8 +19,14 @@ document.getElementById('Donate-Now').addEventListener('click',function(){
     document.getElementById('MainBlance').innerText=totalMainBalance;
     document.getElementById('afterDonate').innerText=AfterDonate;
     const p=document.createElement('p');
-    p.innerText=`Donate ${donationAmount} Tk ,Balance is ${totalMainBalance}`
+    const date= new Date();
+    date.getDate();
+    const d= document.createElement('p');
+    d.innerText=`${donationAmount} Tk is Donated for flood Relief for Noakhali Bangladesh, now Balance is ${totalMainBalance}`;
+    p.innerText=date;
     p.className = "text-sm text-gray-700 my-2";
-    document.getElementById('history').appendChild(p);
-     document.getElementById('input-donateValue').value = '';
+     document.getElementById('showing-transection').appendChild(d);
+    document.getElementById('showing-transection').appendChild(p);
+   
+  
 })

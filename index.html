@@ -9,7 +9,7 @@
 
  </head>
 <!-- Navbar for donate bd  -->
- <section>
+ <section class="md:flex-row">
         <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
         <div class="btn bg-[#B4F461] m-4">
@@ -31,14 +31,16 @@
 <!-- navbar end here  -->
 <!-- now 2 button  -->
  <div class="flex justify-center m-3 p-6">
-    <button class="btn bg-[#B4F461] mr-5">Donation</button>
+    <button class="btn bg-[#B4F461] mr-5" id="donate-view">Donation</button>
     <button class="btn bg-[#B4F461]" id="history">History</button>
  </div>
  <!-- button are done  -->
 
 
       <!-- flood are started  -->
-<section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto m-10">
+<div class="hidden" id="donate-show">
+                    <!-- Noakhali start  -->
+  <section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto m-10">
   <!-- Left Side: Image -->
   <div class="md:w-1/2 w-full">
     <img src="assets/noakhali.png" alt="Flood at Noakhali" class=" m-3 w-full object-cover">
@@ -73,6 +75,11 @@
     </button>
   </div>
 </section>
+                    <!-- Noakhali End  -->
+
+
+
+                                  <!-- Feni  -->
 <section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto mt
 -10">
   <!-- Left Side: Image -->
@@ -84,7 +91,7 @@
   <div class="md:w-1/2 w-full p-6 flex flex-col justify-center">
     <div class="flex items-center gap-2 mb-3">
       <img src="assets/coin.png" alt="coin" class="w-6 h-6">
-      <span class="font-semibold text-gray-600">0 BDT</span>
+      <span class="font-semibold text-gray-600" id="FeniafterDonate">0 BDT</span>
     </div>
 
     <h2 class="font-bold text-lg md:text-xl mb-3">
@@ -99,13 +106,18 @@
       type="text"
       placeholder="Write Donation Amount"
       class="input input-bordered w-full mb-4"
+      id="inut-donateValue-feni"
     />
 
-    <button class="btn bg-[#B4F461] text-black font-semibold w-full hover:scale-105 transition-transform">
+    <button class="btn bg-[#B4F461] text-black font-semibold w-full hover:scale-105 transition-transform" id="Donate-Now-for-feni">
       Donate Now
     </button>
   </div>
 </section>
+                          <!-- feni Finish  -->
+
+
+                        <!-- Team AID  -->
 <section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto m-10">
   <!-- Left Side: Image -->
   <div class="md:w-1/2 w-full">
@@ -116,7 +128,7 @@
   <div class="md:w-1/2 w-full p-6 flex flex-col justify-center">
     <div class="flex items-center gap-2 mb-3">
       <img src="assets/coin.png" alt="coin" class="w-6 h-6">
-      <span class="font-semibold text-gray-600">0 BDT</span>
+      <span class="font-semibold text-gray-600" id="AidafterDonate">0 BDT</span>
     </div>
 
     <h2 class="font-bold text-lg md:text-xl mb-3">
@@ -131,18 +143,31 @@
       type="text"
       placeholder="Write Donation Amount"
       class="input input-bordered w-full mb-4"
+      id="inut-donateValue-Aid"
     />
 
-    <button class="btn bg-[#B4F461] text-black font-semibold w-full hover:scale-105 transition-transform">
+    <button class="btn bg-[#B4F461] text-black font-semibold w-full hover:scale-105 transition-transform" id="Donate-Now-for-Aid">
       Donate Now
     </button>
   </div>
 </section>
-<script src="donate.js"></script>
+                          <!-- Finished Aid  -->
+</div>
+<!-- history  -->
+<section class="hidden" id="transection">
+  <div class="card bg-base-100 shadow-md border border-gray-200">
+    <div class="card-body">
+      <h2 class="font-bold text-xl text-center" id="showing-transection">
+      </h2>
+      <p class="text-sm text-gray-500">
+      </p>
+    </div>
+  </div>
 
-
-
-
-
+</section>
+<script src="donateFeni.js"></script>
+<script src="donateNoakhali.js"></script>
+<script src="history.js"></script>
+<script src="donateAid.js"></script>
  </body>
  </html>
