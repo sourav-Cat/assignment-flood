@@ -23,7 +23,7 @@
   <div class="navbar-end">
     <div class="stats">
         <div class="m-5 pl-6"><img src="assets/coin.png" alt=""></div>
-        <div class="stats m-5.5">5000 BDT</div>
+        <div class="stats m-5.5" id="MainBlance">5000 BDT</div>
 </div>
   </div>
         </div>
@@ -32,7 +32,7 @@
 <!-- now 2 button  -->
  <div class="flex justify-center m-3 p-6">
     <button class="btn bg-[#B4F461] mr-5">Donation</button>
-    <button class="btn bg-[#B4F461]">History</button>
+    <button class="btn bg-[#B4F461]" id="history">History</button>
  </div>
  <!-- button are done  -->
 
@@ -48,7 +48,7 @@
   <div class="md:w-1/2 w-full p-6 flex flex-col justify-center">
     <div class="flex items-center gap-2 mb-3">
       <img src="assets/coin.png" alt="coin" class="w-6 h-6">
-      <span class="font-semibold text-gray-600">0 BDT</span>
+      <span class="font-semibold text-gray-600" id="afterDonate">0 BDT</span>
     </div>
 
     <h2 class="font-bold text-lg md:text-xl mb-3">
@@ -65,10 +65,10 @@
     <input
       type="text"
       placeholder="Write Donation Amount"
-      class="input input-bordered w-full mb-4"
+      class="input input-bordered w-full mb-4" id="inut-donateValue"
     />
 
-    <button class="btn bg-[#B4F461] text-black font-semibold w-full hover:scale-105 transition-transform">
+    <button class="btn bg-[#B4F461] text-black  w-full" id="Donate-Now">
       Donate Now
     </button>
   </div>
@@ -138,6 +138,8 @@
     </button>
   </div>
 </section>
+<script src="donate.js"></script>
+
 
 
 
