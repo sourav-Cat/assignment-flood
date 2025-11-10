@@ -16,8 +16,8 @@ document.getElementById('Donate-Now-for-feni').addEventListener('click',function
         alert('Insufficient balance')
         return
     }
-    document.getElementById('MainBlance').innerText=FenitotalMainBalance;
-    document.getElementById('FeniafterDonate').innerText=FeniAfterDonate;
+    document.getElementById('MainBlance').innerText=FenitotalMainBalance + ' BDT';
+    document.getElementById('FeniafterDonate').innerText=FeniAfterDonate  + ' BDT';
     const p=document.createElement('p');
     const date= new Date();
     date.getDate();
@@ -27,6 +27,7 @@ document.getElementById('Donate-Now-for-feni').addEventListener('click',function
     p.className = "text-sm text-gray-700 my-2";
      document.getElementById('showing-transection').appendChild(d);
     document.getElementById('showing-transection').appendChild(p);
+    document.getElementById('inut-donateValue-feni').value = '';
    
   
 })

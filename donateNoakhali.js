@@ -16,8 +16,8 @@ document.getElementById('Donate-Now').addEventListener('click',function(){
         alert('Insufficient balance')
         return
     }
-    document.getElementById('MainBlance').innerText=totalMainBalance;
-    document.getElementById('afterDonate').innerText=AfterDonate;
+    document.getElementById('MainBlance').innerText=totalMainBalance  + ' BDT';
+    document.getElementById('afterDonate').innerText=AfterDonate  + ' BDT';
     const p=document.createElement('p');
     const date= new Date();
     date.getDate();
@@ -27,6 +27,7 @@ document.getElementById('Donate-Now').addEventListener('click',function(){
     p.className = "text-sm text-gray-700 my-2";
      document.getElementById('showing-transection').appendChild(d);
     document.getElementById('showing-transection').appendChild(p);
+    document.getElementById('inut-donateValue').value = '';
    
   
 })
