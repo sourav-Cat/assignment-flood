@@ -16,6 +16,23 @@ document.getElementById('Donate-Now-for-Aid').addEventListener('click',function(
         alert('Insufficient balance')
         return
     }
+
+    // Modal Work 
+    const modalAid=document.getElementById('my_modal_3')
+    document.getElementById('AidModalShow').innerHTML = '';
+    modalAid.showModal()
+    const AidmodalShow=document.createElement('P')
+    AidmodalShow.innerText=`Thanks For the Donation Amount Of ${AiddonationAmountInt}`
+    document.getElementById('AidModalShow').appendChild(AidmodalShow)
+    setTimeout(()=>{
+        modalAid.close();
+
+    },800
+    );
+
+
+
+
     document.getElementById('MainBlance').innerText=AidtotalMainBalance  + ' BDT';
     document.getElementById('AidafterDonate').innerText=AidAfterDonate  + ' BDT';
     const p=document.createElement('p');

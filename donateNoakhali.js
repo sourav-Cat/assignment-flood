@@ -1,5 +1,5 @@
  
-document.getElementById('Donate-Now').addEventListener('click',function(){
+document.getElementById('Donate-Now').addEventListener('click',function(event){
     const donationAmount=document.getElementById('inut-donateValue').value;
    if (!donationAmount || isNaN(donationAmount) || donationAmount <= 0) {
     alert('Please enter a valid amount');
@@ -16,6 +16,20 @@ document.getElementById('Donate-Now').addEventListener('click',function(){
         alert('Insufficient balance')
         return
     }
+    //  Modal Work 
+    const modal=document.getElementById('my_modal_2')
+    document.getElementById('ModalShow').innerHTML = '';
+    modal.showModal()
+    const modalShow=document.createElement('P')
+    modalShow.innerText=`Thanks For the Donation Amount Of ${donationAmountInt}`
+    document.getElementById('ModalShow').appendChild(modalShow)
+    setTimeout(()=>{
+        modal.close();
+
+    },1000
+    );
+// Modal Work finished 
+
     document.getElementById('MainBlance').innerText=totalMainBalance  + ' BDT';
     document.getElementById('afterDonate').innerText=AfterDonate  + ' BDT';
     const p=document.createElement('p');
