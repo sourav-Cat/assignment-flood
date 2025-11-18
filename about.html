@@ -8,25 +8,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <section class="md:flex-row">
-        <div class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start">
-        <div class="btn bg-[#B4F461] m-4">
-        <button onclick="location.href='index.html'" >Home</button>
-        </div>
-  </div>
-  <div class="navbar-center">
-    <img src="assets/logo.png" alt="">
-    <a class="text-xl">Donate Bangladesh</a>
-  </div>
-  <div class="navbar-end">
-    <div class="stats">
-        <div class="m-5 pl-6"><img src="assets/coin.png" alt=""></div>
-        <div class="stats m-5.5" id="MainBlance">500000 BDT</div>
-</div>
-  </div>
-        </div>
+   <div class="sticky top-0 z-50 backdrop-blur-md bg-white/60">
+<section class="md:flex-row">
+       <div class="navbar bg-base-100 shadow-sm">
+       <div class="navbar-start">
+       <div class="btn bg-[#B4F461] m-4">
+       <button onclick="location.href='index.html'" >Home</button>
+       </div>
+ </div>
+ <div class="navbar-center">
+   <img src="assets/logo.png" alt="">
+   <a class="text-xl">Donate Bangladesh</a>
+ </div>
+ <div class="navbar-end md:my-7">
+       <div class="m-5 "><img src="assets/coin.png" alt=""></div>
+       <div class="mr-1" id="MainBlance">500000 BDT</div>
+ </div>
+       </div>
 </section>
+<!-- navbar end here  -->
+<!-- now 2 button  -->
+<div class="flex justify-center  m-3 p-6">
+   <button class="btn bg-[#B4F461] mr-5" id="donate-view">Donation</button>
+   <button class="btn bg-[#B4F461]  " id="history">History</button>
+</div>
+<!-- button are done  -->
+</div>
 <section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto m-10">
 
   <div class="md:w-1/2 w-full">
