@@ -23,7 +23,7 @@ document.getElementById('Donate-Now-for-feni').addEventListener('click',function
     const FenimodalShow=document.createElement('P')
     FenimodalShow.innerText=`Thanks For the Donation Amount Of ${FenidonationAmountInt}`
     document.getElementById('ModalShowFeni').appendChild(FenimodalShow)
-    setTimeout(()=>{
+    setTimeout(function(){
         Fenimodal.close();
 
     },1000

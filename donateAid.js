@@ -24,7 +24,7 @@ document.getElementById('Donate-Now-for-Aid').addEventListener('click',function(
     const AidmodalShow=document.createElement('P')
     AidmodalShow.innerText=`Thanks For the Donation Amount Of ${AiddonationAmountInt}`
     document.getElementById('AidModalShow').appendChild(AidmodalShow)
-    setTimeout(()=>{
+    setTimeout(function(){
         modalAid.close();
 
     },800

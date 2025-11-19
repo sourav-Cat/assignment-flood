@@ -10,34 +10,44 @@
 </head>
 <!-- Navbar for donate bd  -->
  <div class="sticky top-0 z-50 backdrop-blur-md bg-white/60">
-<section class="md:flex-row">
-       <div class="navbar bg-base-100 shadow-sm">
-       <div class="navbar-start">
-       <div class="btn bg-[#B4F461] m-4">
-       <button onclick="location.href='about.html'" >Blog</button>
-       </div>
- </div>
- <div class="navbar-center">
-   <img src="assets/logo.png" alt="">
-   <a class="text-xl">Donate Bangladesh</a>
- </div>
- <div class="navbar-end md:my-7">
-       <div class="m-5 "><img src="assets/coin.png" alt=""></div>
-       <div class="mr-1" id="MainBlance">500000 BDT</div>
- </div>
-       </div>
+<section class="bg-[#F9F7F3]">
+  <div class="navbar  shadow-sm md:flex-row">
+
+    <!-- Left -->
+    <div class="navbar-start">
+      <button 
+        onclick="location.href='about.html'" 
+        class="btn bg-[#B4F461] m-4">
+        Blog
+      </button>
+    </div>
+
+    <!-- Center -->
+    <div class="navbar-center flex flex-col items-center">
+      <img src="assets/logo.png" class="h-10" alt="">
+      <a class="text-xl font-semibold">Donate Bangladesh</a>
+    </div>
+
+    <!-- Right -->
+    <div class="navbar-end md:my-7 flex items-center gap-2">
+      <img src="assets/coin.png" class="h-8" alt="">
+      <div id="MainBlance" class="font-bold">500000</div>
+      <span class="font-semibold">BDT</span>
+    </div>
+
+  </div>
 </section>
 <!-- navbar end here  -->
 <!-- now 2 button  -->
 <div class="flex justify-center  m-3 p-6">
    <button class="btn bg-[#B4F461] mr-5" id="donate-view">Donation</button>
-   <button class="btn bg-[#B4F461]  " id="history">History</button>
+   <button class="btn" id="history">History</button>
 </div>
 <!-- button are done  -->
 </div>
 
      <!-- flood are started  -->
-<div class="hidden" id="donate-show">
+<div class="" id="donate-show">
                    <!-- Noakhali start  -->
  <section class="flex flex-col md:flex-row bg-base-300 shadow-md rounded-2xl overflow-hidden max-w-5xl mx-auto m-10">
  <!-- Left Side: Image -->

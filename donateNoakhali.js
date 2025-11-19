@@ -23,7 +23,7 @@ document.getElementById('Donate-Now').addEventListener('click',function(event){
     const modalShow=document.createElement('P')
     modalShow.innerText=`Thanks For the Donation Amount Of ${donationAmountInt}`
     document.getElementById('ModalShow').appendChild(modalShow)
-    setTimeout(()=>{
+    setTimeout(function() {
         modal.close();
 
     },1000
